@@ -1,5 +1,9 @@
 # musescore-snap
 
+WIP this is the first attemp to snap the master branch of MuseScore with a
+compiled version of QT 5.8.0 but is not working yet.
+Based on https://github.com/lirios/platform-snap
+
 Create with:
 
     snapcraft
