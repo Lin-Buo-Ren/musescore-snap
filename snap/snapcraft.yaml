@@ -19,7 +19,7 @@ confinement: strict
 
 apps:
     mscore:
-        command: desktop-launch mscore
+        command: desktop-launch musescore
         plugs:
           - gsettings
           - home
@@ -85,3 +85,10 @@ parts:
             - libatk-adaptor
             - libgail-common
         after: [desktop-qt5]
+    wrapper:
+        source: ./snap/bin
+        plugin: dump
+        organize:
+            musescore.sh: bin/musescore
+        stage:
+            - bin/musescore
